@@ -30,7 +30,6 @@ catchBtn.addEventListener('click', () => {
   const catchInput = document.querySelector('#texto-tarefa');
   const createLi = document.createElement('li');
   createLi.innerText = catchInput.value;
-  catchInput.value = '';
   catchOList.appendChild(createLi);
-
-})
+  catchInput.value = '';
+});
