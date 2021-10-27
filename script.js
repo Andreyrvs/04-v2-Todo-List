@@ -1,8 +1,8 @@
-console.log('Começouuuuuuuuuuuuu');
 
-/**
- * Um novo começo !!
- */
+
+/** Um novo começo !!
+ * 
+
 // // Captura a classe pai do input e do botao
 // const catchInputBtn = document.querySelector('.add-input-btn');
 // // Captura a lista Ordana OL
@@ -57,3 +57,4 @@ console.log('Começouuuuuuuuuuuuu');
 //   .getPropertyValue('background-color');
 //   return theCssprop;
 // }
+ */
