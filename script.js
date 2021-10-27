@@ -17,3 +17,12 @@ selecionaOL.addEventListener('click', (e) => {
   }
   e.target.classList.add('corCinza');
 });
+
+selecionaOL.addEventListener('dblclick', (e) => {
+  const linhaRiscada = document.querySelector('.completed');
+  if (linhaRiscada) {
+    linhaRiscada.classList.remove('completed');
+  } else {
+    e.target.classList.add('completed');
+  }
+});
