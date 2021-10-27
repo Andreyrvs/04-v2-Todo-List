@@ -1,6 +1,7 @@
 body {
   background-color: #04bf33;
 }
+
 main {
   display: block;
   background-color: white;
@@ -45,5 +46,5 @@ header {
 }
 
 .corCinza {
-  background-color: rgb(128, 128, 128);
+  background-color: rgb(128 , 128 , 128);
 }
