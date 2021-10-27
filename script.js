@@ -1,6 +1,7 @@
 const selecionaOL = document.querySelector('#lista-tarefas');
 const selecionaInput = document.getElementById('texto-tarefa');
 const selecionaBotaoSalvar = document.getElementById('criar-tarefa');
+const selecionaBotaoLimpar = document.getElementById('apaga-tudo');
 
 selecionaBotaoSalvar.addEventListener('click', () => {
   const criaLI = document.createElement('li');
@@ -25,4 +26,8 @@ selecionaOL.addEventListener('dblclick', (e) => {
   } else {
     e.target.classList.add('completed');
   }
+});
+
+selecionaBotaoLimpar.addEventListener('click', () => {
+  selecionaOL.innerText = '';
 });
