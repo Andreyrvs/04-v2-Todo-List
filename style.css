@@ -49,6 +49,13 @@ header {
 #apaga-tudo {
   margin-left: 155px;
   border-radius: 10px;
+  background-color: #F22E39;
+  color: white;
+}
+
+#remover-finalizados {
+  margin-left: 20px;
+  border-radius: 10px;
   background-color: #2e97f2;
   color: white;
 }
