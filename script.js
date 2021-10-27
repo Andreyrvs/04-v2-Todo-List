@@ -1,21 +1,19 @@
-const selecionaOL = document.getElementById('lista-tarefas');
+const selecionaOL = document.querySelector('#lista-tarefas');
 const selecionaInput = document.getElementById('texto-tarefa');
-const selecionaBotao = document.getElementById('criar-tarefa');
-const selecionaLIs = document.querySelector('.selecionado');
+const selecionaBotaoSalvar = document.getElementById('criar-tarefa');
 
-selecionaBotao.addEventListener('click', () => {
+selecionaBotaoSalvar.addEventListener('click', () => {
   const criaLI = document.createElement('li');
   criaLI.innerText = selecionaInput.value;
-  criaLI.className = 'selecionado';
+  criaLI.className = 'li';
   selecionaOL.appendChild(criaLI);
   selecionaInput.value = '';
 });
 
-selecionaOL.addEventListener('click', () => {
-  const liComCor = document.querySelector('.selecionado');
-  for (let index = 0; index < liComCor.length; index += 1) {
-    liComCor[index].classList.remove('selecionado');
-    // liComCor[index].style.backgroundColor = 'grey';
+selecionaOL.addEventListener('click', (e) => {
+  const cor = document.querySelector('.corCinza');
+  if (cor) {
+    cor.classList.remove('corCinza');
   }
-  liComCor.classList.add('selecionado');
+  e.target.classList.add('corCinza');
 });
