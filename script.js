@@ -2,13 +2,14 @@ const selecionaOL = document.querySelector('#lista-tarefas');
 const selecionaInput = document.getElementById('texto-tarefa');
 const selecionaBotaoSalvar = document.getElementById('criar-tarefa');
 const selecionaBotaoLimpar = document.getElementById('apaga-tudo');
-const selecionaBotaoCompletos = document.getElementById('remover-finalizados');
-const selecionaLI = document.querySelectorAll('li');
+const selecionaBotaoLimparCompletos = document.getElementById(
+  'remover-finalizados'
+);
 
 selecionaBotaoSalvar.addEventListener('click', () => {
   const criaLI = document.createElement('li');
   criaLI.innerText = selecionaInput.value;
-  criaLI.className = 'li';
+  criaLI.className = 'tarefasAdd';
   selecionaOL.appendChild(criaLI);
   selecionaInput.value = '';
 });
@@ -34,7 +35,10 @@ selecionaBotaoLimpar.addEventListener('click', () => {
   selecionaOL.innerText = '';
 });
 
-selecionaBotaoCompletos.addEventListener('click', () => {
-  const removeLinhaRiscada = document.querySelectorAll('.completed');
-  removeLinhaRiscada.remove('completed');
+selecionaBotaoLimparCompletos.addEventListener('click', () => {
+  const selecionaCompleted = document.querySelectorAll('.completed');
+
+  for (let index = 0; index < selecionaCompleted.length; index += 1) {
+    selecionaOL.removeChild(selecionaCompleted[index]);
+  }
 });
