@@ -1,5 +1,7 @@
 # Todo List 2.0
 
+![Todo list](./todoList.png)
+
 ## Contexto
 
 Este projeto trata-se de uma lista de tarefas.
