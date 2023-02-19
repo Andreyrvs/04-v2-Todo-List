@@ -13,8 +13,8 @@ Front-end:
 
 ## Executando aplicação
 
-* Para rodar o front-end:
+* Para rodar o o projeto:
 
   ```bash
-    cd src/ && npm start
+    inicie o index.html
   ```
