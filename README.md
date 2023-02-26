@@ -1,20 +1,38 @@
 # Todo List 2.0
 
-![Todo list](./todoList.png)
-
 ## Contexto
 
-Este projeto trata-se de uma lista de tarefas.
+Segunda versão de [Todo list](https://github.com/Andreyrvs/04-Todo-List)
+
+Este projeto trata-se de lista de tarefas onde é possivel adicionar, selecionar, marcar como concluido, limpar todas as tarefas ou apenas as marcadas.
+
+Nessa versão é possivel remover tarefas finalizadas, remover apenas uma tarefa, tocar as tarefas de ordem e salvar as tarefas no local storage.
+
+## Aplicação
+
+![Todo list](./todoList.png)
 
 ## Técnologias usadas
 
 Front-end:
-> Desenvolvido usando: CSS3, HTML5, JavaScript
+> Desenvolvido usando: HTML, CSS, JavaScript
+
+## Instalando Dependências
+
+* clone o projeto:
+
+  ```bash
+  git clone git@github.com:Andreyrvs/04-v2-Todo-List.git
+  ```
 
 ## Executando aplicação
 
-* Para rodar o o projeto:
+* Para rodar o front-end:
 
   ```bash
-    inicie o index.html
+  cd 04-v2-Todo-List
   ```
+
+* Clique duas vezes no arquivo `index.html`
+
+> A aplicação utiliza a resolução **1366 x 768**
